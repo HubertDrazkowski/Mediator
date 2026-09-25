@@ -1,0 +1,76 @@
+{
+  "horizon": 50000,
+  "checkpoints": [
+    5000,
+    10000,
+    30000,
+    50000
+  ],
+  "jobs": 4,
+  "output": "results/transpose",
+  "seeds": [
+    10401,
+    10402,
+    10403,
+    10404,
+    10405,
+    10406,
+    10407,
+    10408,
+    10409,
+    10410,
+    10411,
+    10412,
+    10413,
+    10414,
+    10415,
+    10416,
+    10417,
+    10418,
+    10419,
+    10420,
+    10421,
+    10422,
+    10423,
+    10424,
+    10425,
+    10426,
+    10427,
+    10428,
+    10429,
+    10430
+  ],
+  "algorithms": [
+    "CTsallis-Action",
+    "CTsallis-Mediator",
+    "CTsallis-INF"
+  ],
+  "algorithm_overrides": {},
+  "plot": {
+    "checkpoint": 50000,
+    "font_size": 24,
+    "show_headers": true,
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ]
+  },
+  "save_full_trajectories": false,
+  "policy_snapshot_interval": 1000,
+  "experiment": "transpose",
+  "transpose": {
+    "n_values": [
+      8,
+      12,
+      16
+    ],
+    "orientations": [
+      "vertex",
+      "edge"
+    ],
+    "baseline": 0.35,
+    "minimum_action_gap": 0.02,
+    "environment_seed": 2026092307
+  }
+}

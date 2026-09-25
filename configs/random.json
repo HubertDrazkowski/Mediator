@@ -1,0 +1,107 @@
+{
+  "horizon": 30000,
+  "checkpoints": [
+    5000,
+    30000
+  ],
+  "jobs": 4,
+  "output": "results/random",
+  "seeds": [
+    8201
+  ],
+  "algorithms": [
+    "Tsallis-INF",
+    "CTsallis-Action",
+    "CTsallis-Mediator",
+    "CTsallis-INF",
+    "CTsallis-INF (no Hα)",
+    "EXP4MF (IW)",
+    "PE",
+    "CUCB",
+    "CTS",
+    "CUCB2"
+  ],
+  "algorithm_overrides": {},
+  "plot": {
+    "checkpoint": 30000,
+    "font_size": 26,
+    "show_headers": true,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "save_full_trajectories": false,
+  "policy_snapshot_interval": 1000,
+  "experiment": "random",
+  "random": {
+    "seed": 2026091802,
+    "n_graphs": 50,
+    "losses_per_graph": 1,
+    "dimensions": [
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        30
+      ],
+      [
+        10,
+        80
+      ],
+      [
+        30,
+        10
+      ],
+      [
+        30,
+        30
+      ],
+      [
+        30,
+        80
+      ],
+      [
+        80,
+        10
+      ],
+      [
+        80,
+        30
+      ],
+      [
+        80,
+        80
+      ]
+    ],
+    "densities": [
+      0.05,
+      0.2,
+      0.4
+    ],
+    "structures": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "kappas": [
+      0.3,
+      1.0,
+      10.0
+    ],
+    "lambdas": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "joint_diagnostics": true,
+    "extension_seed": 2026092301,
+    "extension_n_graphs": 20,
+    "switching_count": 30,
+    "selection_seed": 2026092401,
+    "L0": 50,
+    "gamma": 1.6
+  }
+}

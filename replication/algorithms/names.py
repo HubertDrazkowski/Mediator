@@ -1,0 +1,2 @@
+"""Publication display names; saved identifiers remain stable."""
+DISPLAY_NAMES = {'Tsallis-INF': 'Tsallis-INF', 'CTsallis-Action': 'CTsallis-Action', 'CTsallis-Context': 'CTsallis-Mediator', 'CTsallis-Jensen-selected': 'CTsallis-INF', 'CTsallis-Jensen-rho0': 'CTsallis-INF (no Hα)', 'EXP4MF': 'EXP4MF (IW)', 'EXP4MF-RV': 'EXP4MF (RW)', 'PECUCB': 'PE', 'CUCB': 'CUCB', 'CTS': 'CTS', 'CUCB2': 'CUCB2'}

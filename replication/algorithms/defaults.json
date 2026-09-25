@@ -1,0 +1,139 @@
+[
+  {
+    "id": "Tsallis-INF",
+    "method": "Tsallis-INF",
+    "c": 0.7,
+    "rho": 0.0,
+    "cutoff": 32.653061224489804,
+    "cutoff_rule": "scaled",
+    "alpha": 0.6666666666666666,
+    "label": "Tsallis-INF",
+    "backend": "calibrated_tsallis",
+    "estimator": "rv",
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning."
+  },
+  {
+    "id": "CTsallis-Action",
+    "method": "CTsallis-Action",
+    "c": 0.7,
+    "rho": 0.0,
+    "cutoff": 16.0,
+    "cutoff_rule": "fixed",
+    "alpha": 0.6666666666666666,
+    "label": "CTsallis-Action",
+    "backend": "calibrated_tsallis",
+    "estimator": "rv",
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning."
+  },
+  {
+    "id": "CTsallis-Context",
+    "method": "CTsallis-Context",
+    "c": 0.7,
+    "rho": 0.0,
+    "cutoff": 16.0,
+    "cutoff_rule": "fixed",
+    "alpha": 0.6666666666666666,
+    "label": "CTsallis-Mediator",
+    "backend": "calibrated_tsallis",
+    "estimator": "rv",
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning."
+  },
+  {
+    "id": "CTsallis-Jensen-selected",
+    "method": "CTsallis-Jensen",
+    "c": 0.7,
+    "rho": 0.015,
+    "cutoff": 16.0,
+    "cutoff_rule": "fixed",
+    "alpha": 0.6666666666666666,
+    "label": "CTsallis-INF",
+    "backend": "calibrated_tsallis",
+    "estimator": "rv",
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning."
+  },
+  {
+    "id": "CTsallis-Jensen-rho0",
+    "method": "CTsallis-Jensen-rho0",
+    "c": 0.7,
+    "rho": 0.0,
+    "cutoff": 16.0,
+    "cutoff_rule": "fixed",
+    "alpha": 0.6666666666666666,
+    "label": "CTsallis-INF (no Hα)",
+    "backend": "calibrated_tsallis",
+    "estimator": "rv",
+    "alpha_term_retained": false,
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning."
+  },
+  {
+    "id": "EXP4MF",
+    "method": "EXP4MF",
+    "label": "EXP4MF (IW)",
+    "backend": "published",
+    "options": {
+      "schedule": "bobw"
+    },
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning.",
+    "source": "https://arxiv.org/html/2402.10282v1#S4"
+  },
+  {
+    "id": "EXP4MF-RV",
+    "method": "EXP4MF-RV",
+    "label": "EXP4MF (RW)",
+    "backend": "experimental_exp4mf_rv",
+    "options": {
+      "schedule": "bobw",
+      "rv_cutoff": 16.0
+    },
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning.",
+    "source": "https://arxiv.org/html/2402.10282v1#S4",
+    "estimator": "rv",
+    "cutoff": 16.0,
+    "baseline_amplitude": 0.5,
+    "cutoff_rule": "fixed",
+    "published_guarantee_applies": false
+  },
+  {
+    "id": "PECUCB",
+    "method": "PE-CUCB",
+    "label": "PE",
+    "backend": "published",
+    "options": {
+      "play_order": "random",
+      "design_tolerance": 1e-08,
+      "design_max_iterations": 10000
+    },
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning.",
+    "source": "https://arxiv.org/html/2407.00950v1#alg2"
+  },
+  {
+    "id": "CUCB",
+    "method": "CUCB1",
+    "label": "CUCB",
+    "backend": "published",
+    "options": {},
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning.",
+    "source": "https://proceedings.mlr.press/v124/lu20a/lu20a.pdf#page=4"
+  },
+  {
+    "id": "CTS",
+    "method": "CTS",
+    "label": "CTS",
+    "backend": "published",
+    "options": {
+      "prior_alpha": 1.0,
+      "prior_beta": 1.0
+    },
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning.",
+    "source": "https://proceedings.mlr.press/v124/lu20a/lu20a.pdf#page=5"
+  },
+  {
+    "id": "CUCB2",
+    "method": "CUCB2",
+    "label": "CUCB2",
+    "backend": "published",
+    "options": {},
+    "parameter_provenance": "Fixed paper configuration; no per-instance retuning.",
+    "source": "https://arxiv.org/pdf/2012.07058#page=10"
+  }
+]

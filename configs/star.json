@@ -1,0 +1,23 @@
+{
+  "experiment": "star",
+  "horizon": 20000,
+  "checkpoints": [5000, 20000],
+  "jobs": 4,
+  "output": "results/star",
+  "seeds": [27001, 27002, 27003, 27004, 27005],
+  "algorithms": [
+    "Tsallis-INF", "CTsallis-Action", "CTsallis-Mediator", "CTsallis-INF",
+    "CTsallis-INF (no Hα)", "EXP4MF (IW)", "PE", "CUCB", "CTS", "CUCB2"
+  ],
+  "algorithm_overrides": {},
+  "star": {"source_path": "data/STAR.csv", "verify_paper": true},
+  "plot": {
+    "checkpoint": 20000,
+    "font_size": 20,
+    "show_headers": false,
+    "formats": ["png", "pdf"],
+    "log_scale": true
+  },
+  "save_full_trajectories": false,
+  "policy_snapshot_interval": 100
+}

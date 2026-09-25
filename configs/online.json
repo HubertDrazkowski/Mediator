@@ -1,0 +1,98 @@
+{
+  "horizon": 30000,
+  "checkpoints": [
+    5000,
+    30000
+  ],
+  "jobs": 4,
+  "output": "results/online",
+  "seeds": [
+    8201,
+    8202,
+    8203,
+    8204,
+    8205,
+    8206,
+    8207,
+    8208,
+    8209,
+    8210,
+    8211,
+    8212,
+    8213,
+    8214,
+    8215,
+    8216,
+    8217,
+    8218,
+    8219,
+    8220,
+    8221,
+    8222,
+    8223,
+    8224,
+    8225,
+    8226,
+    8227,
+    8228,
+    8229,
+    8230
+  ],
+  "algorithms": [
+    "Tsallis-INF",
+    "CTsallis-Action",
+    "CTsallis-Mediator",
+    "CTsallis-INF",
+    "CTsallis-INF (no Hα)",
+    "EXP4MF (IW)",
+    "EXP4MF (RW)",
+    "PE",
+    "CUCB",
+    "CTS",
+    "CUCB2"
+  ],
+  "algorithm_overrides": {},
+  "dimensions": [
+    [
+      80,
+      30
+    ],
+    [
+      30,
+      80
+    ],
+    [
+      60,
+      60
+    ]
+  ],
+  "epsilons": [
+    0.3
+  ],
+  "modes": [
+    "stationary",
+    "baseline_switching"
+  ],
+  "e1": {
+    "delta": 0.1,
+    "L0": 50,
+    "gamma": 1.6
+  },
+  "plot": {
+    "checkpoint": 30000,
+    "font_size": 26,
+    "show_headers": true,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "save_full_trajectories": false,
+  "policy_snapshot_interval": 1000,
+  "experiment": "online",
+  "initial_pairs": [
+    500,
+    2000
+  ],
+  "prior_strength": 1.0
+}
