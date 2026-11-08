@@ -45,10 +45,6 @@ method. Transpose uses only Action, Mediator, and INF. Removing a name from
 CUCB2 receives N/A when its common-support assumption fails, with the graph
 and all other methods retained.
 
-The online default intentionally uses 30 seeds everywhere. It has no separate
-40-seed A=30, Z=80 preset. A figure incorporating that later ten-seed extension
-will have different boxes from this requested 30-seed replication. See
-[PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md) for this and manuscript clarifications.
 
 ## Run, resume, and replot
 
@@ -153,20 +149,3 @@ These files are created locally when requested; they are not bundled.
 STAR input files are likewise ignored by Git. E1 and online are self-contained
 and therefore each compute their own true-M references if both are run.
 No saved results from an older package are silently imported into a new plan.
-
-## Reproducibility and scope
-
-The package regenerates the executed mechanisms, loss schedules, and RNG streams.
-Floating-point optimization can vary across numerical-library/platform versions.
-`requirements-tested.txt` lists versions used for verification; `requirements.txt`
-provides compatible ranges. Tests and short prefix checks validate implementations
-and data plumbing; they do not re-establish the paper's statistical conclusions.
-
-See [VALIDATION.md](VALIDATION.md) for the parity checks and test coverage.
-
-Only these five experiment families are included. Earlier tuning sweeps, ACTG,
-mediator-hiding analyses, rejected adaptivity designs, and unrelated cardinality
-sweeps are absent. [EXPERIMENTS.md](EXPERIMENTS.md) gives exact definitions,
-[REFERENCES.md](REFERENCES.md) gives method sources, and
-[PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md) explains figure-to-code mapping and
-limitations. The scripts never upload or publish anything.
