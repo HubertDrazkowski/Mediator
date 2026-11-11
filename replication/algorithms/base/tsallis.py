@@ -439,7 +439,7 @@ class _ConicCausal(_CausalBase):
                 value, gradient, weight = objective_gradient(p)
                 q = mat @ p
                 hessian = (1-weight)*self.context_bonus_scale*.5*(mat.T*q**-1.5) @ mat
-                hessian += np.diag(.5*weight*p**-1.5 + lam*alpha*p**(alpha-2))
+                hessian += np.diag(.5*weight*p**-1.5 + lam*p**(alpha-2))
                 scaling = 1/np.sqrt(np.diag(hessian))
                 try:
                     inverse = np.linalg.solve(hessian*scaling[:,None]*scaling[None,:],
@@ -491,7 +491,7 @@ class _ConicCausal(_CausalBase):
         def hessian(x):
             p = x[:n]
             if minimum:
-                return np.diag(np.r_[lam*alpha*p**(alpha-2), 0.]) if lam else np.zeros((size,size))
+                return np.diag(np.r_[lam*p**(alpha-2), 0.]) if lam else np.zeros((size,size))
             return .25*self.context_bonus_scale*(mat.T*(mat @ p)**-1.5) @ mat
 
         def branch_values(x):
