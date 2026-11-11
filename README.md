@@ -44,7 +44,8 @@ method. Transpose uses only Action, Mediator, and INF. Removing a name from
 `algorithms` excludes it; no hyperparameter is retuned by the runner.
 CUCB2 receives N/A when its common-support assumption fails, with the graph
 and all other methods retained.
-
+The online configuration uses 30 runs per condition for all three
+dimension pairs: (80,30), (30,80), and (60,60), using seeds 8201–8230.
 
 ## Run, resume, and replot
 
